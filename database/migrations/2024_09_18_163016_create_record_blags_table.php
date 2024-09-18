@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('iamge');
             $table->string('detils')->nullable();
             $table->string('ip')->nullable();
+            $table->string('stute')->default('0');
             $table->timestamps();
         });
     }
