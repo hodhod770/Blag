@@ -52,6 +52,7 @@ class Home extends Component
             $d->detils=$this->details;
             $d->ip=Request::ip();
             $d->save();
+            session()->flash('doneSuc','1');
             $this->reset();
         }
 
