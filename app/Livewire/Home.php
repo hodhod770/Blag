@@ -20,7 +20,7 @@ class Home extends Component
     protected $rules = [
         'image' => 'required|image|mimes:jpg,png,gif|max:2048', // 2MB Max
         'link' => 'required|url',
-        'details' => 'required|string|max:1000',
+        // 'details' => 'required|string|max:1000',
     ];
     protected $messages = [
         'image.required' => 'الصورة مطلوبة.',
@@ -29,9 +29,9 @@ class Home extends Component
         'image.max' => 'حجم الصورة يجب ألا يتجاوز 2 ميجابايت.',
         'link.required' => 'الرابط مطلوب.',
         'link.url' => 'الرابط غير صحيح.',
-        'details.required' => 'التفاصيل مطلوبة.',
-        'details.string' => 'التفاصيل يجب أن تكون نصًا.',
-        'details.max' => 'التفاصيل يجب ألا تتجاوز 1000 حرف.',
+        // 'details.required' => 'التفاصيل مطلوبة.',
+        // 'details.string' => 'التفاصيل يجب أن تكون نصًا.',
+        // 'details.max' => 'التفاصيل يجب ألا تتجاوز 1000 حرف.',
     ];
     public function render()
     {

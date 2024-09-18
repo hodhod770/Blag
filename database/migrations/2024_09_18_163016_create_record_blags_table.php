@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('link');
             $table->string('iamge');
-            $table->string('detils');
-            $table->string('ip');
+            $table->string('detils')->nullable();
+            $table->string('ip')->nullable();
             $table->timestamps();
         });
     }
