@@ -46,8 +46,8 @@ class Home extends Component
 
     } 
 
-    public function g()
-    {
-        return RecordBlag::get();
-    }
+    // public function g()
+    // {
+    //     return RecordBlag::get();
+    // }
 }
