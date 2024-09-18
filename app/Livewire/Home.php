@@ -32,8 +32,8 @@ class Home extends Component
         if ($this->image) {
             # code...
             $uniqueName = Str::uuid() . '.' . $this->image->getClientOriginalExtension();
-            $this->image->storeAs(path: 'public/blags', name: $uniqueName);
-            dd( $uniqueName);
+            $this->image->storeAs('Blags', $uniqueName);
+            // dd( $uniqueName);
 
             $d=new RecordBlag();
             $d->link=$this->link;
@@ -41,6 +41,7 @@ class Home extends Component
             $d->detils=$this->details;
             $d->ip=Request::ip();
             $d->save();
+            $this->reset();
         }
 
     } 
