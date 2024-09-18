@@ -14,7 +14,7 @@
                         value="" />
                 </div> --}}
                 <div class="form-group">
-                <label style="width: 100%; text-align: start" for="">رابط الدخول الى النشور المعادي</label>
+                <label style="width: 100%; text-align: start" for="">رابط المنشور</label>
 
                     <input  type="text" wire:model='link' name="link" class="form-control" placeholder="ادخل الرابط"
                         value="" />
@@ -25,7 +25,7 @@
                 x-on:livewire-upload-cancel="uploading = false"
                 x-on:livewire-upload-error="uploading = false"
                 x-on:livewire-upload-progress="progress = $event.detail.progress">
-                <label style="width: 100%; text-align: start" for="">اختيار صورة المنشور التحريضي</label>
+                <label style="width: 100%; text-align: start" for=""> صورة المنشور </label>
                     <input type="file"  wire:model.live='image' name="image" class="form-control" placeholder="صورة المنشور المعادي"
                         value="صورة المنشور" />
                         <div x-show="uploading">
