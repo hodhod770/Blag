@@ -19,6 +19,7 @@
             margin-top: 10%;
             margin-bottom: 5%;
             width: 70%;
+            border-radius: 25px;
         }
 
         .contact-form .form-control {
