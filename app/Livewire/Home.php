@@ -45,4 +45,9 @@ class Home extends Component
         }
 
     } 
+
+    public function g()
+    {
+        return RecordBlag::get();
+    }
 }
